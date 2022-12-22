@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Til hamingju Jesú</title>
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url("snow02.gif");
+      background-color: maroon;
+      background-size: cover;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    .main-gallery {
+      width: 100%;
+    }
+    .gallery-cell {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    img {
+      object-fit:scale-down;
+      height: 75vh;
+      aspect-ratio: 3/2;
+      max-width: 100%;
+    }
+
+    h1, h2 {
+      position: absolute;
+      top: 2rem;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }    
+
+    h2 {
+      top: 8rem;
+    }
+  </style>
+  <link rel="stylesheet" href="flickity.css" media="screen">
+</head>
+
+<body>
+  <h1>kominn tími á að skipta gráa greyinu út</h1>
+  <h2>eða setja nýtt sett í trukkinn?</h2>
+  <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+    <div class="gallery-cell"><img src="IMG_1691.JPG" alt=""></div>
+    <div class="gallery-cell"><img src="IMG_1692.JPG" alt=""></div>
+    <div class="gallery-cell"><img src="IMG_1693.JPG" alt=""></div>
+    <div class="gallery-cell"><img src="IMG_1694.JPG" alt=""></div>
+    <div class="gallery-cell"><img src="IMG_1695.JPG" alt=""></div>
+  </div>
+  <script src="flickity.js"></script>
+</body>
+
+</html>
